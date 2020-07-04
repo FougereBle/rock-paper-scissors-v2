@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <main>
+      <h1>Rock Paper Scissors</h1>
+      <p>Round: <span id="round">1</span>/5</p>
+      <p>Your Score: <span id="player-score">0</span></p>
+      <p>Computer Score: <span id="computer-score">0</span></p>
+      <p id="buttons">
+        <button type="button" id="rock" onclick="playRound('rock')">Rock</button>
+        <button type="button" id="paper" onclick="playRound('paper')">Paper</button>
+        <button type="button" id="scissors" onclick="playRound('scissors')">Scissors</button>
+      </p>
+      <p id="restart" style="display: none;">
+        <button type="button" id="restart" onclick="restartGame()">Restart</button>
+      </p>
+      <div><strong id="message"></strong></div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
